@@ -1,2 +1,5 @@
 #Ignore changes in .idea folder
 .idea/
+
+#Ignore changes in Test.java
+Test.java
