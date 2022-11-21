@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Kendaraan {
+public class Kendaraan {
+    String jenis;
+    String noPol;
 }
