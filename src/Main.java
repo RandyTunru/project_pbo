@@ -51,7 +51,9 @@ public class Main {
             c.setAutoCommit(false);
             stmt = c.createStatement();
             stmt.executeUpdate(String.format("INSERT INTO INFO_MASUK (NOPOL, JENIS) VALUES ('%s', '%s');", newKendaraan.noPol, newKendaraan.jenis));
+            stmt.close();
             c.commit();
+            c.close();
         }catch (Exception e){
             System.err.println( e.getClass().getName()+": "+ e.getMessage() );
             return;
