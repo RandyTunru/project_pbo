@@ -93,12 +93,13 @@ public class Main {
             c.commit();
             c.close();
 
+            System.out.print("No. Tiket: ");
             System.out.println(infoBaru.no_tiket);
+            System.out.print("Jenis Kendaraan: ");
             System.out.println(infoBaru.jenis);
-            System.out.println(infoBaru.tggl_masuk);
-            System.out.println(infoBaru.tggl_keluar);
-            System.out.println(infoBaru.jam_masuk);
-            System.out.println(infoBaru.jam_keluar);
+            System.out.println(String.format("Tanggal Masuk   : %s           Tanggal Keluar  : %s", infoBaru.tggl_masuk, infoBaru.tggl_keluar));
+            System.out.println(String.format("Jam Masuk       : %s           Jam Keluar      : %s", infoBaru.tggl_masuk, infoBaru.tggl_keluar));
+            System.out.print("Biaya: ");
             System.out.println(infoBaru.biaya);
 
         }catch (Exception e){
